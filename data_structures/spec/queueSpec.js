@@ -26,8 +26,8 @@ describe("Queue", function() {
       queue.add("I've made a huge mistake");
       expect(queue.length()).to.equal(2);
 
-      expect(queue.remove()).to.equal("I've made a huge mistake");
       expect(queue.remove()).to.equal("I just blue myself");
+      expect(queue.remove()).to.equal("I've made a huge mistake");
       expect(queue.length()).to.equal(0);
     });
   });
