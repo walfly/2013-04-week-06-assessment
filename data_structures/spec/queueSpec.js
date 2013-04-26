@@ -1,23 +1,23 @@
-describe("queue", function() {
+describe("Queue", function() {
   var queue;
 
   beforeEach(function() {
     queue = new Queue();
   });
 
-  describe("add", function() {
-    it("should be a method named 'add'", function() {
+  describe("#add", function() {
+    it("should exist", function() {
       expect(typeof queue.add).to.equal('function');
     });
 
-    it("should add an element onto the top of the queue", function() {
+    it("adds an element to the queue", function() {
       queue.add("Gobias Industries");
       expect(queue.length()).to.equal(1);
     });
   });
 
-  describe("remove", function() {
-    it("should be a method named 'remove'", function() {
+  describe("#remove", function() {
+    it("should exist", function() {
       expect(typeof queue.remove).to.equal('function');
     });
 
@@ -32,12 +32,12 @@ describe("queue", function() {
     });
   });
 
-  describe("length", function() {
-    it("should be a method named 'length'", function() {
+  describe("#length", function() {
+    it("should exist", function() {
       expect(typeof queue.length).to.equal('function');
     });
 
-    it("should tell us how many items are in our queue", function() {
+    it("returns number of items in the queue", function() {
       queue.add("They're *illusions*, Michael!");
       queue.add("A trick is something a whore does for money.");
       expect(queue.length()).to.equal(2);
