@@ -21,7 +21,7 @@ describe("Queue", function() {
       expect(typeof queue.remove).to.equal('function');
     });
 
-    it("returns the most recently added value that has not already been removed", function() {
+    it("returns the first added value that has not already been removed", function() {
       queue.add("I just blue myself");
       queue.add("I've made a huge mistake");
       expect(queue.length()).to.equal(2);
