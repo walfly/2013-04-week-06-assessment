@@ -20,7 +20,7 @@ var makeLinkedList = function(){
 
   linkedList.contains = function(item){
     var result = false;
-    var current = head;
+    var current = this.head;
     while (current !== null) {
       if(result) return result;
       if(current.value === item) result = true;
