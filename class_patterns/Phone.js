@@ -8,7 +8,7 @@ var makePhone = function(phoneNumber){
 };
 
 var makeSmartPhone = function(phoneNumber, phoneEmail){
-  result = makePhone(phoneNumber);
+  var result = makePhone(phoneNumber);
   result.phoneEmail = phoneEmail;
   var oldSend = result.send;
   result.send = function(recipientPhoneNumberOrEmail, message){
