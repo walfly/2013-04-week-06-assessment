@@ -1,1 +1,0 @@
-List and briefly describe the types of algorithmic complexity. Be as clear and complete as necessary to demonstrate your mastery.
