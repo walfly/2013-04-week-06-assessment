@@ -28,3 +28,7 @@ end
 get '/jquery.js' do
   send_file 'jquery.js'
 end
+
+after do
+  ActiveRecord::Base.clear_active_connections!
+end
